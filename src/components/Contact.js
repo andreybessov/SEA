@@ -101,12 +101,13 @@ function Contact() {
 
                             <label className="" htmlFor="user-interest" >Interest area</label>
                             <input ref={interestRef} className="contact-section__input" name="user-interest" id="user-interest" type="text" placeholder="Choose your area"></input>
-                        </div>
-                        </div>
-                        <ReCAPTCHA
-                        sitekey={'6Lc8KrUqAAAAAKm4JJuQPm8yk35hM12mMc2D5r8b'} // Замените на ваш Site Key
+
+                            <ReCAPTCHA
+                        sitekey= '6LecM7UqAAAAAClbNLBFefnVgMic3J4VPiB8WiOb' // Замените на ваш Site Key
                         onChange={handleCaptchaChange}
                         />
+                        </div>
+                        </div>
                         <div className="contact-section__button">
                         <button type="submit">Send form</button>
                         </div>
