@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/SEA/static/css/main.22d24aa2.css",
-    "main.js": "/SEA/static/js/main.2f44bde2.js",
-    "static/media/hero-bg.jpg": "/SEA/static/media/hero-bg.8b147e903c560e48c8c3.jpg",
-    "static/media/key-bg.jpg": "/SEA/static/media/key-bg.7e18aa5225bc18569bb7.jpg",
+    "main.css": "/SEA/static/css/main.86a979a3.css",
+    "main.js": "/SEA/static/js/main.13bcad9f.js",
+    "static/media/hero-bg-slide1.jpg": "/SEA/static/media/hero-bg-slide1.fc2575dc20d9792d4106.jpg",
+    "static/media/key-bg.jpg": "/SEA/static/media/key-bg.ce00f9c9d29da25fefac.jpg",
     "static/media/hero-logo.png": "/SEA/static/media/hero-logo.30c6b3cf48f78d79fa95.png",
+    "static/media/nunito-sans-v15-latin-900italic.woff2": "/SEA/static/media/nunito-sans-v15-latin-900italic.4361430ac5f7fb3721ea.woff2",
+    "static/media/nunito-sans-v15-latin-600italic.woff2": "/SEA/static/media/nunito-sans-v15-latin-600italic.6822bcae59af092302d3.woff2",
+    "static/media/nunito-sans-v15-latin-600.woff2": "/SEA/static/media/nunito-sans-v15-latin-600.9470ec3b506837c04f57.woff2",
+    "static/media/nunito-sans-v15-latin-900.woff2": "/SEA/static/media/nunito-sans-v15-latin-900.487fe4434881b3922c74.woff2",
+    "static/media/nunito-sans-v15-latin-500.woff2": "/SEA/static/media/nunito-sans-v15-latin-500.70ff5fa184cf428c24cd.woff2",
+    "static/media/nunito-sans-v15-latin-regular.woff2": "/SEA/static/media/nunito-sans-v15-latin-regular.df62b85d68225de7d768.woff2",
+    "static/media/chevron-right.svg": "/SEA/static/media/chevron-right.7beb9788671f5ea22797846499843eef.svg",
     "index.html": "/SEA/index.html",
-    "main.22d24aa2.css.map": "/SEA/static/css/main.22d24aa2.css.map",
-    "main.2f44bde2.js.map": "/SEA/static/js/main.2f44bde2.js.map"
+    "main.86a979a3.css.map": "/SEA/static/css/main.86a979a3.css.map",
+    "main.13bcad9f.js.map": "/SEA/static/js/main.13bcad9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.22d24aa2.css",
-    "static/js/main.2f44bde2.js"
+    "static/css/main.86a979a3.css",
+    "static/js/main.13bcad9f.js"
   ]
 }
