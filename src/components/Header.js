@@ -9,13 +9,13 @@ function Header() {
             <a className='header__logo' href='#'><img src={Logo} alt="logo"></img></a>
             <ul className="header__menu">
                 <li>
-                    <a href="#">Main</a>
+                    <a  href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a  href="#">About</a>
                 </li>
                 <li>
-                    <a href="#">Contacts</a>
+                    <a  href="#">Contacts</a>
                 </li>
             </ul>
             <button className="header__button">Join Us</button>

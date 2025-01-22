@@ -1,34 +1,29 @@
 .key-section {
-    padding: 96px 0;
-    background-image: url('/src/assets/key-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 100px 0;
+    background-position: center;
+    background: linear-gradient(0deg, rgba(12, 17, 41, 0.60) 0%, rgba(12, 17, 41, 0.60) 100%), url('/src/assets/key-bg.jpg') lightgray 50% / cover no-repeat;
 
 
     &__container {
         display: flex;
         width: 100%;
+        justify-content: space-between;
     }
 
     &__text-block {
         justify-content: space-between;
-        width: 50%;
         color: white;
+        font-size: 20px;
+        font-weight: 400;
+        max-width: 496px;
 
-        h3 {
+        h2 {
             text-transform: uppercase;
-        }
-    }
-
-    &__text-block-btn {
-        padding: 8px;
-        background-color: blue;
-        cursor: pointer;
-        border: none;
-
-        a {
-            text-decoration: none;
-            color: white;
+            font-size: 36px;
+            font-weight: 900;
+            font-style: italic;
+            color: #fff;
+            line-height: 50px;
         }
     }
 
@@ -38,33 +33,44 @@
         background: white;
         width: 50%;
         background-color: transparent;
+        // max-width: 442px;
     }
 
     &__info-button {
+        display: flex;
+        align-items: center;
         border: none;
         cursor: pointer;
-        padding: 14px;
+        padding: 20px 30px;
+        width: 100%;
+        justify-content: space-between;
+        color: var(--primary-color);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 500;
+        font-style: italic;
+        text-align: start;
+        gap: 10px;
 
         &:nth-child(1) {
-            border-bottom: 1px solid gray;
-            border-radius: 8px 8px 0 0;
+            border-bottom: 1px solid #B6B6B6;
         }
 
         &:nth-child(2) {
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid #B6B6B6;
         }
 
-        &:last-child {
-            border-radius: 0 0 8px 8px;
+        &:nth-child(3) {
+            border-bottom: 1px solid #B6B6B6;
         }
 
-        a {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            color: rgb(29, 29, 97);
-            text-decoration: none;
-            text-transform: uppercase;
-        }
+            svg {
+                fill: var(--primary-color);
+                width: 24px;
+                height: 24px;
+                rotate: 90deg;
+                flex-shrink: 0;
+            }
     }
 }

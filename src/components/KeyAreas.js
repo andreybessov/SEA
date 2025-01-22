@@ -1,4 +1,4 @@
-
+import {ReactComponent as Arrow} from '../assets/chevron-right.svg'
 
 function KeyAreas() {
     return(
@@ -6,16 +6,15 @@ function KeyAreas() {
             <div className="container">
                 <div className="key-section__container">
                     <div className="key-section__text-block">
-                        <h3>key areas</h3>
-                        <p>The Alliance operates based on transparency, 
-                            partnerships between business and government, 
-                            adherence to international standards, and efficient resource management</p>
-                            <button className="key-section__text-block-btn"><a href="#">Discover our projects &gt;</a></button>
+                        <h2>importance of Cooperation</h2>
+                        <p>The Alliance operates based on transparency, partnerships between business and government,
+                         adherence to international standards, and efficient resource management. </p>
                     </div>
                     <div className="key-section__button-info-block">
-                        <button className="key-section__info-button"><a href="#">infrastructure restoration <span>&gt;</span></a></button>
-                        <button className="key-section__info-button"><a href="#">implementation of modern technologies <span>&gt;</span></a></button>
-                        <button className="key-section__info-button"><a href="#">enhancing resilience to threats <span>&gt;</span></a></button>
+                        <button className="key-section__info-button">Practical experience in modern wartime conditions <Arrow /></button>
+                        <button className="key-section__info-button">Focus on engineering solutions <Arrow /></button>
+                        <button className="key-section__info-button">Strengthening international security <Arrow /></button>
+                        <button className="key-section__info-button">Unique experience for international partners <Arrow /></button>
                     </div>
                 </div>
             </div>
