@@ -1,0 +1,21 @@
+.partners-section {
+    padding: 40px 0;
+
+    &__title {
+        font-size: 36px;
+        font-weight: 900;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+
+    &__partners-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            max-width: 120px;
+            max-height: 120px;
+        }
+    }
+}

@@ -4,6 +4,7 @@ import AboutUs from './components/AboutUs'
 import KeyAreas from './components/KeyAreas'
 import Initiators from "./components/Initiators";
 import Communication from "./components/Communication";
+import Partners from "./components/Partners";
 import Contact from "./components/Contact";
 
 
@@ -16,6 +17,7 @@ function App() {
       <KeyAreas />
       <Initiators />
       <Communication />
+      <Partners />
       <Contact />
     </div>
   );
