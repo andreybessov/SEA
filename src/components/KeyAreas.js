@@ -26,7 +26,10 @@ function KeyAreas() {
                     </div>
                     <div className="key-section__button-info-block">
                         {infoItems.map((item, index) => (
-                            <div key={index} className="key-section__accordion">
+                            <div 
+                                key={index} 
+                                className={`key-section__accordion ${activeIndex === index ? 'active' : ''}`}
+                            >
                                 <button 
                                     className={`key-section__info-button ${activeIndex === index ? 'active' : ''}`} 
                                     onClick={() => handleToggle(index)}
@@ -41,10 +44,10 @@ function KeyAreas() {
                                     </motion.div>
                                 </button>
                                 <motion.div
-                                    className="key-section__dropdown"
+                                    className={`key-section__dropdown ${activeIndex === index ? 'open' : ''}`}
                                     initial={{ height: 0, opacity: 0 }}
                                     animate={activeIndex === index ? { height: 'auto', opacity: 1 } : { height: 0, opacity: 0 }}
-                                    transition={{ duration: 0.5 }}
+                                    transition={{ duration: 0.5, ease: 'easeInOut' }}
                                     style={{ overflow: 'hidden' }}
                                 >
                                     <p>{item.content}</p>

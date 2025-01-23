@@ -12,12 +12,12 @@ function HeroSection() {
       text: 'Collaborative network of military engineers and private engineering firms ', 
       background: slide1 },
     { id: 2,
-      title: 'Discover our services', 
-      text: 'Connecting leaders, technologies, and ideas for infrastructure development', 
+      title: 'STRATEGIC ENGINEERING ALLIANCE', 
+      text: 'Collaborative network of military engineers and private engineering firms', 
       background: slide2 },
     { id: 3,
-      title: 'Let us create for you', 
-      text: 'Connecting leaders, technologies, and ideas for infrastructure development', 
+      title: 'STRATEGIC ENGINEERING ALLIANCE', 
+      text: 'Collaborative network of military engineers and private engineering firms', 
       background: slide3 },
   ];
 
