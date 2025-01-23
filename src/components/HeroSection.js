@@ -29,7 +29,7 @@ function HeroSection() {
           perPage: 1, // Один слайд на экране
           pagination: true, // Пагинаторы (круглые точки)
           arrows: false, // Без стрелочек
-          autoplay: false, // Автопрокрутка
+          autoplay: true, // Автопрокрутка
           interval: 5000, // Задержка между слайдами
           drag: true, // Возможность свайпа
           speed: 1000,
