@@ -27,9 +27,6 @@
     }
 
     &__button {
-        background-color: transparent;
-        border: none;
-        a {
             display: flex;
             text-decoration: none;
             color: var(--color-button);
@@ -39,15 +36,20 @@
             align-items: center;
             padding: 12px 10px;
             line-height: 32px;
-
-            &:hover {
-                text-shadow: 0px 4px 10px 0px rgba(3, 14, 67, 0.60)
-            }
+            width: max-content;
 
             svg {
                 fill: var(--color-button);
             }
-        }
+
+            &:hover {
+                text-shadow: 0px 4px 10px rgba(3, 14, 67, 0.60);
+                color: var(--primary-color);
+
+                svg {
+                    fill: var(--primary-color);
+                }
+            }
     }
 
     &__list-title {

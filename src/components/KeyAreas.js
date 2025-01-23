@@ -22,7 +22,7 @@ function KeyAreas() {
                 <div className="key-section__container">
                     <div className="key-section__text-block">
                         <h2>Importance of Cooperation</h2>
-                        <p>The Alliance operates based on transparency, partnerships between business and government, adherence to international standards, and efficient resource management.</p>
+                        <p>Cooperation with the Strategic Engineering Alliance means gaining access to unparalleled expertise, innovative solutions, and a commitment to global security. Together, we tackle modern challenges to build a resilient and secure future.</p>
                     </div>
                     <div className="key-section__button-info-block">
                         {infoItems.map((item, index) => (

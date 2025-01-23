@@ -14,9 +14,9 @@ function AboutUs() {
             <h3 className="about-section__title">What is the GOAL of the SEA?</h3>
             <p className="about-section__text">The main purpose of the SEA is to ensure reliable protection of Ukraine together with our international Partners
             in order to prevent the repetition of russian aggression against Europe in the future.</p>
-            <button className="about-section__button"><a href="#">
+            <a className='about-section__button' href="#">
             Learn more about us <Arrow />
-            </a></button>
+            </a>
             </div>
         </section>
     )
