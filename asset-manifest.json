@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/SEA/static/css/main.b6f2946d.css",
-    "main.js": "/SEA/static/js/main.969f072b.js",
+    "main.css": "/SEA/static/css/main.df971309.css",
+    "main.js": "/SEA/static/js/main.80306f6c.js",
     "static/media/hero-bg-slide1.jpg": "/SEA/static/media/hero-bg-slide1.fc2575dc20d9792d4106.jpg",
     "static/media/key-bg.jpg": "/SEA/static/media/key-bg.ce00f9c9d29da25fefac.jpg",
+    "static/media/initiators-img.jpg": "/SEA/static/media/initiators-img.42d0e5c429c69074dd25.jpg",
     "static/media/hero-logo.png": "/SEA/static/media/hero-logo.30c6b3cf48f78d79fa95.png",
     "static/media/nunito-sans-v15-latin-900italic.woff2": "/SEA/static/media/nunito-sans-v15-latin-900italic.4361430ac5f7fb3721ea.woff2",
     "static/media/nunito-sans-v15-latin-600italic.woff2": "/SEA/static/media/nunito-sans-v15-latin-600italic.6822bcae59af092302d3.woff2",
@@ -13,11 +14,11 @@
     "static/media/nunito-sans-v15-latin-regular.woff2": "/SEA/static/media/nunito-sans-v15-latin-regular.df62b85d68225de7d768.woff2",
     "static/media/chevron-right.svg": "/SEA/static/media/chevron-right.7beb9788671f5ea22797846499843eef.svg",
     "index.html": "/SEA/index.html",
-    "main.b6f2946d.css.map": "/SEA/static/css/main.b6f2946d.css.map",
-    "main.969f072b.js.map": "/SEA/static/js/main.969f072b.js.map"
+    "main.df971309.css.map": "/SEA/static/css/main.df971309.css.map",
+    "main.80306f6c.js.map": "/SEA/static/js/main.80306f6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6f2946d.css",
-    "static/js/main.969f072b.js"
+    "static/css/main.df971309.css",
+    "static/js/main.80306f6c.js"
   ]
 }
