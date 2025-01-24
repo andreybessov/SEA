@@ -11,9 +11,9 @@ function KeyAreas() {
 
     const infoItems = [
         { title: 'Practical experience in modern wartime conditions', content: 'By leveraging cutting-edge innovations, the Alliance aims to introduce advanced engineering solutions. From smart city technologies to AI-driven monitoring systems, these tools optimize resource usage, enhance sustainability, and foster technological progress.' },
-        { title: 'Focus on engineering solutions', content: 'Key aspects of engineering solutions in various industries.' },
-        { title: 'Strengthening international security', content: 'Measures and strategies to improve international security cooperation.' },
-        { title: 'Unique experience for international partners', content: 'Special knowledge and experience provided to global partners.' }
+        { title: 'Focus on engineering solutions', content: 'SEA offers modern engineering systems to protect critical infrastructure ensuring societal endurance even in crisis situations' },
+        { title: 'Strengthening international security', content: 'Support of the SEA is an investment in stability, as the hybrid threats that Ukraine faces can become a problem in other parts of the world.' },
+        { title: 'Unique experience for international partners', content: 'Cooperation with the SEA provides access to unique knowledge and opportunities to prepare our partners or international structures for similar threat' }
     ];
 
     return (

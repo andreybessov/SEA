@@ -3,7 +3,7 @@ import {ReactComponent as Arrow} from '../assets/chevron-right.svg'
 
 function AboutUs() {
     return(
-        <section className="about-section">
+        <section className="about-section" id='about-section'>
             <div className="container">
             <h2 className="about-section__title">About us</h2>
             <p className="about-section__text"><span>strategic engineering alliance</span> is a platform for collaboration between businesses, 

@@ -4,7 +4,7 @@ import {ReactComponent as Location} from '../assets/location-icon.svg'
 
 function Communication () {
     return(
-        <section className="communication-section">
+        <section className="communication-section" id='contact-section'>
             <div className="container">
             <h2 className="communication-section__title">contacts</h2>
                 <div className='communication-section__container'>

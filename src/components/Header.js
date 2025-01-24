@@ -12,13 +12,13 @@ function Header() {
                     <a  href="#">Home</a>
                 </li>
                 <li>
-                    <a  href="#">About</a>
+                    <a  href="#about-section">About</a>
                 </li>
                 <li>
-                    <a  href="#">Contacts</a>
+                    <a  href="#contact-section">Contacts</a>
                 </li>
             </ul>
-            <button className="header__button">Join Us</button>
+            <a className="header__button" href='#contact-form'>Join Us</a>
             </div>
             </div>
         </header>

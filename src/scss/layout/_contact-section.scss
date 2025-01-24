@@ -1,16 +1,17 @@
 .contact-section {
     padding: 48px 0;
 
-    &__content-block {
-        address {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
     &__form-container {
         display: flex;
         justify-content: space-between;
+    }
+
+    &__form-title {
+        color: var(--primary-color);
+        font-size: 30px;
+        font-weight: 900;
+        font-style: italic;
+        text-transform: uppercase;
     }
 
     &__form-block {
@@ -40,24 +41,27 @@
         background-color: #dcdcdc5c;
         padding: 24px 16px;
         margin-bottom: 18px;
+        appearance: none;  // Убирает стандартное оформление браузера
+        font-size: 18px;
 
         &:focus {
             outline: none;
         }
 
-        // &::placeholder {
-        //     color: rgb(12, 12, 77);
-        //     font-size: 18px;
-        // }
-
         &:focus::placeholder {
             color: transparent;
+        }
+
+        &::placeholder {
+            font-size: 18px;
+            font-weight: 400;
         }
     }
 
     label {
-        font-weight: 600;
-        font-size: 24px;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 6px;
     }
 
     &__contact-block {
@@ -65,8 +69,64 @@
         justify-content: space-between;
     }
 
-    &__form-title {
-        color: blue;
-        font-size: 48px;
+    // Обёртка для стилизации селектов
+    &__select-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .contact-section__select {
+            width: 100%;
+            border: none;
+            background-color: #dcdcdc5c;
+            padding: 24px 16px;
+            margin-bottom: 18px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #333;
+            cursor: pointer;
+            appearance: none;  // Убирает стрелку браузера
+        }
+
+        .contact-section__arrow {
+            position: absolute;
+            right: 2%;
+            bottom: 46%;
+            width: 24px;
+            height: 24px;
+            fill: #5A5E70;  
+            pointer-events: none; 
+            transform: rotate(90deg); 
+        }
+    }
+
+    // Стили для поля user-message (на всю ширину)
+    &__message-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        label {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+
+        .contact-section__input {
+            width: 100%;
+        }
+    }
+
+    &__input.error, 
+    &__select.error {
+        border: 2px solid red;
+    }
+
+    &__error {
+        color: red;
+        font-size: 14px;
+        margin-top: -12px;
+        margin-bottom: 18px;
     }
 }
