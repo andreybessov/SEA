@@ -6,6 +6,7 @@ import Initiators from "./components/Initiators";
 import Communication from "./components/Communication";
 import Partners from "./components/Partners";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Communication />
       <Partners />
       <Contact />
+      <Footer />
     </div>
   );
 }
