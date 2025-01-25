@@ -17,7 +17,7 @@ function KeyAreas() {
     ];
 
     return (
-        <section className="key-section">
+        <section className="key-section" id='key-areas'>
             <div className="container">
                 <div className="key-section__container">
                     <div className="key-section__text-block">

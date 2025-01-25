@@ -7,12 +7,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
+  @media screen and (min-width: $bp-desktop) {
+    height: 100vh;
+  }
 
-  transition: opacity 1s ease-in-out;
+  /* Фон секции */
+  background-size: cover; /* Занимает всю секцию, обрезая лишнее */
+  background-position: top center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Запрещает повторение */
+
+  transition: opacity 1s ease-in-out; /* Плавный переход при смене фона */
 }
 
 .hero-section.fade-in {
@@ -20,7 +26,7 @@
 }
 
 .hero-section.fade-out {
-  opacity: 0.2;
+  opacity: 0.8;
 }
 
 .hero-section__title {

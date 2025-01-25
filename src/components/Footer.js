@@ -40,7 +40,7 @@ function Footer () {
                         <div className="footer__about-block">
                             <h3><a href="#about-section">About Us</a></h3>
                             <a href="#initiators-section">Who we are</a>
-                            <a href="#">Our Focus Areas</a>
+                            <a href="#key-areas">Our Focus Areas</a>
                         </div>
                         <div className="footer__quick-block">
                             <h3>Quick Links</h3>
