@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SEA/static/css/main.65d326e3.css",
+    "main.css": "/SEA/static/css/main.100cc12d.css",
     "main.js": "/SEA/static/js/main.5d4331c3.js",
     "static/media/initiators-img-tablet.jpg": "/SEA/static/media/initiators-img-tablet.c9093449628e3893d0a8.jpg",
     "static/media/hero-bg-slide1.jpg": "/SEA/static/media/hero-bg-slide1.fc2575dc20d9792d4106.jpg",
@@ -12,12 +12,6 @@
     "static/media/parters-logo-4.png": "/SEA/static/media/parters-logo-4.31a28f7128ccbf29ee43.png",
     "static/media/hero-logo.png": "/SEA/static/media/hero-logo.30c6b3cf48f78d79fa95.png",
     "static/media/parters-logo-3.png": "/SEA/static/media/parters-logo-3.dc39ff16cb78834d1bb0.png",
-    "static/media/nunito-sans-v15-latin-900italic.woff2": "/SEA/static/media/nunito-sans-v15-latin-900italic.4361430ac5f7fb3721ea.woff2",
-    "static/media/nunito-sans-v15-latin-600italic.woff2": "/SEA/static/media/nunito-sans-v15-latin-600italic.6822bcae59af092302d3.woff2",
-    "static/media/nunito-sans-v15-latin-600.woff2": "/SEA/static/media/nunito-sans-v15-latin-600.9470ec3b506837c04f57.woff2",
-    "static/media/nunito-sans-v15-latin-900.woff2": "/SEA/static/media/nunito-sans-v15-latin-900.487fe4434881b3922c74.woff2",
-    "static/media/nunito-sans-v15-latin-500.woff2": "/SEA/static/media/nunito-sans-v15-latin-500.70ff5fa184cf428c24cd.woff2",
-    "static/media/nunito-sans-v15-latin-regular.woff2": "/SEA/static/media/nunito-sans-v15-latin-regular.df62b85d68225de7d768.woff2",
     "static/media/location-icon.svg": "/SEA/static/media/location-icon.7100070fb1d2385e72b1aa6bf20be409.svg",
     "static/media/phone-icon.svg": "/SEA/static/media/phone-icon.a334791ac0ce15845e45c8ed78d47255.svg",
     "static/media/linkedin-icon.svg": "/SEA/static/media/linkedin-icon.62098f3f44509ced04f0826fbd20a929.svg",
@@ -26,11 +20,11 @@
     "static/media/email-icon.svg": "/SEA/static/media/email-icon.f60f049abb39355cee0830434e4a6d5c.svg",
     "static/media/facebook-icon.svg": "/SEA/static/media/facebook-icon.837c80cb4169cc91e08e1bc669914ce0.svg",
     "static/media/chevron-right.svg": "/SEA/static/media/chevron-right.7beb9788671f5ea22797846499843eef.svg",
-    "main.65d326e3.css.map": "/SEA/static/css/main.65d326e3.css.map",
+    "main.100cc12d.css.map": "/SEA/static/css/main.100cc12d.css.map",
     "main.5d4331c3.js.map": "/SEA/static/js/main.5d4331c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.65d326e3.css",
+    "static/css/main.100cc12d.css",
     "static/js/main.5d4331c3.js"
   ]
 }
