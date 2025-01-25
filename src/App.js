@@ -17,8 +17,8 @@ function App() {
       <AboutUs />
       <KeyAreas />
       <Initiators />
-      {/*<Communication />
-      <Partners />
+      <Communication />
+      {/*<Partners />
       <Contact />
       <Footer /> */}
     </div>
