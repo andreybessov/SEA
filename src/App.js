@@ -18,8 +18,8 @@ function App() {
       <KeyAreas />
       <Initiators />
       <Communication />
-      {/*<Partners />
-      <Contact />
+      <Partners />
+      {/*<Contact />
       <Footer /> */}
     </div>
   );

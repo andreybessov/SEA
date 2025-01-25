@@ -2,10 +2,18 @@
     padding: 40px 0;
 
     &__title {
-        font-size: 36px;
+        font-size: 20px;
         font-weight: 900;
         font-style: italic;
         text-transform: uppercase;
+
+        @media screen and (min-width: $bp-mobile) {
+            font-size: 24px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 36px;
+        }
     }
 
     &__partners-link {
@@ -14,8 +22,18 @@
         justify-content: space-between;
 
         img {
-            max-width: 120px;
-            max-height: 120px;
+            max-width: 60px;
+            max-height: 60px;
+
+            @media screen and (min-width: $bp-tablet) {
+                max-width: 100px;
+                max-height: 100px;
+            }
+
+            @media screen and (min-width: $bp-desktop) {
+                max-width: 120px;
+                max-height: 120px;
+            }
         }
     }
 }
