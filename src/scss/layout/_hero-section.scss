@@ -1,99 +1,54 @@
-// .hero-section {
-//     // height: 720px;
-//     // background-image: url('/src/assets/hero-bg.jpg');
-//     // background-repeat: no-repeat;
-//     // background-size: cover;
-// }
-
 .hero-section {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  @media screen and (min-width:$bp-desktop) {
     height: 100vh;
-    overflow: hidden;
+  }
 
-    &__title {
-            display: flex;
-            font-style: italic;
-            font-family: 'Nunito Sans', sans-serif;
-            font-size: 18px;
-            font-weight: 900;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-            z-index: 10;
-            text-transform: uppercase;
-            text-align: start;
-            width: 100%;
-            margin-top: 320px;
+  /* Фон секції */
+  background-size: cover; /* Займає всю секцію, обрізуючи зайве */
+  background-position: top; /* Центрує зображення */
+  background-repeat: no-repeat; /* Запобігає повторенню */
 
-            @media screen and (min-width: $bp-mobile) {
-              font-size: 30px;
-              margin-top: 400px;
-            }
+  &__title {
+    font-style: italic;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    margin-top: 320px;
 
-            @media screen and (min-width:$bp-desktop) {
-              font-size: 50px;
-              margin: 0;
-            }
+    @media screen and (min-width: $bp-mobile) {
+      font-size: 30px;
+      margin-top: 400px;
     }
 
-    &__text {
-        display: flex;
-        font-style: italic;
-        width: 100%;
-        z-index: 10;
-        text-align: start;
-        font-size: 14px;
-        font-weight: 600;
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 50px;
+      margin: 0;
+    }
+  }
 
-        @media screen and (min-width: $bp-mobile) {
-          font-size: 24px;
-        }
+  &__text {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 600;
 
-        @media screen and (min-width:$bp-desktop) {
-          font-size: 30px;
-        }
+    @media screen and (min-width: $bp-mobile) {
+      font-size: 24px;
     }
 
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 30px;
+    }
+  }
 }
-
-  .hero-slider {
-    height: calc(100vh - 53px);
-
-    @media screen and (min-width:$bp-mobile) {
-      height: 100vh; 
-    }
-  }
-  
-  .hero-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
-  }
-  
-  .splide__pagination {
-     display: none;
-
-     @media screen and (min-width:$bp-tablet) {
-      bottom: 20px;
-      display: flex;
-      gap: 10px;
-     }
-  }
-  
-  .splide__pagination__page {
-    width: 7px;
-    height: 7px;
-    background: gray;
-    border-radius: 50%;
-    opacity: 0.7;
-    transition: opacity 0.3s;
-  }
-  
-  .splide__pagination__page.is-active {
-    background: white;
-    opacity: 1;
-  }
-  
