@@ -11,4 +11,8 @@
     @media screen and (min-width: $bp-tablet) {
         padding: 0 184px;
     }
+
+    @media screen and (min-width: 1920px) {
+        padding: 0 400px;
+    }
 }

@@ -16,6 +16,7 @@
 
         @media screen and (min-width: $bp-mobile) {
             flex-direction: row;
+            gap: 40px;
         }
     }
 
@@ -25,7 +26,6 @@
         font-size: 14px;
         font-weight: 400;
         max-width: 496px;
-        text-align: justify;
 
         @media screen and (min-width:$bp-mobile) {
             font-size: 16px;
@@ -46,6 +46,10 @@
                 font-size: 36px;
                 line-height: 50px;
             }
+        }
+
+        p {
+            text-align: justify;
         }
     }
 
