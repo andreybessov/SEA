@@ -4,13 +4,11 @@
   "private": true,
   "homepage": "https://andreybessov.github.io/SEA",
   "dependencies": {
-    "@splidejs/react-splide": "^0.7.12",
     "cra-template": "1.2.0",
     "framer-motion": "^12.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1",
-    "swiper": "^11.2.1"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
