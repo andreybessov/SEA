@@ -33,9 +33,14 @@ function HeroSection() {
           interval: 5000, // Задержка между слайдами
           drag: true, // Возможность свайпа
           speed: 1000,
-          easing: 'ease-out'
+          easing: 'ease-out',
+          breakpoints: {
+            1280: {
+              autoplay: false, 
+            },
+          },
         }}
-        style={{ height: '100vh' }} // Высота секции
+        className="hero-slider"
       >
         {slides.map((slide) => (
           <SplideSlide key={slide.id}>
@@ -49,7 +54,7 @@ function HeroSection() {
               }}
             >
               <div className='container'>
-              <h1 className="hero-section__title" style={{margin: "0"}}>{slide.title}</h1>
+              <h1 className="hero-section__title" >{slide.title}</h1>
               <p className='hero-section__text' style={{marginTop: "30"}}>{slide.text}</p>
               </div>
             </div>

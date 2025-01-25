@@ -3,26 +3,46 @@
 
     &__title {
         text-transform: uppercase;
-        font-size: 36px;
+        font-size: 20px;
         font-weight: 900;
         font-style: italic;
-        margin: 0;
-        line-height: 50px;
+        margin: 0;       
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 36px;
+            line-height: 50px;
+        }
     }
 
     &__text{
-        font-size: 26px;
-        line-height: 34px;
+        font-size: 14px;
+        line-height: 20px;
         font-weight: 500;
-        margin-bottom: 60px;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: $bp-mobile) {
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 26px;
+            margin-bottom: 60px;
+            line-height: 34px;
+        }
         
         
         span {
             font-weight: 900;
             font-style: italic;
-            line-height: 34px;
-            font-size: 26px;
+            line-height: 20px;
+            font-size: 16px;
             text-transform: uppercase;
+
+            @media screen and (min-width:$bp-tablet) {
+                font-size: 26px;
+                line-height: 34px;
+            }
         }
     }
 
@@ -30,16 +50,28 @@
             display: flex;
             text-decoration: none;
             color: var(--color-button);
-            font-size: 24px;
+            font-size: 16px;
             gap: 8px;
             font-weight: 600;
             align-items: center;
             padding: 12px 10px;
-            line-height: 32px;
+            line-height: 20px;
             width: max-content;
+
+            @media screen  and (min-width:$bp-tablet){
+                font-size: 24px;
+                line-height: 32px;
+            }
 
             svg {
                 fill: var(--color-button);
+                width: 20px;
+                height: 20px;
+
+                @media screen and (min-width:$bp-tablet) {
+                    width: 24px;
+                    height: 24px;
+                }
             }
 
             &:hover {

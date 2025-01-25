@@ -15,7 +15,7 @@
             display: flex;
             font-style: italic;
             font-family: 'Nunito Sans', sans-serif;
-            font-size: 50px;
+            font-size: 18px;
             font-weight: 900;
             font-weight: bold;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
@@ -23,6 +23,17 @@
             text-transform: uppercase;
             text-align: start;
             width: 100%;
+            margin-top: 320px;
+
+            @media screen and (min-width: $bp-mobile) {
+              font-size: 30px;
+              margin-top: 400px;
+            }
+
+            @media screen and (min-width:$bp-desktop) {
+              font-size: 50px;
+              margin: 0;
+            }
     }
 
     &__text {
@@ -31,11 +42,27 @@
         width: 100%;
         z-index: 10;
         text-align: start;
-        font-size: 30px;
+        font-size: 14px;
         font-weight: 600;
+
+        @media screen and (min-width: $bp-mobile) {
+          font-size: 24px;
+        }
+
+        @media screen and (min-width:$bp-desktop) {
+          font-size: 30px;
+        }
     }
 
 }
+
+  .hero-slider {
+    height: calc(100vh - 53px);
+
+    @media screen and (min-width:$bp-mobile) {
+      height: 100vh; 
+    }
+  }
   
   .hero-slide {
     display: flex;
@@ -47,9 +74,13 @@
   }
   
   .splide__pagination {
-    bottom: 20px;
-    display: flex;
-    gap: 10px; /* Расположение пагинаторов */
+     display: none;
+
+     @media screen and (min-width:$bp-tablet) {
+      bottom: 20px;
+      display: flex;
+      gap: 10px;
+     }
   }
   
   .splide__pagination__page {

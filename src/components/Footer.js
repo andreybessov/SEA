@@ -24,8 +24,8 @@ function Footer () {
                 <div className='footer__social-block'>
                     <p>© 2025 Strategic Engineering Alliance. All Rights Reserved</p>
                     <div className='footer__social-link'>
-                    <a href='https://www.linkedin.com/in/oleksii-chuiev-ua'><Linkedin /></a>
-                    <a href='https://www.facebook.com/'><FacebookIcon /></a>
+                    <a href='https://www.linkedin.com/in/oleksii-chuiev-ua' target='_blank' rel="noopener noreferrer"><Linkedin /></a>
+                    <a href='https://www.facebook.com/' target='_blank' rel="noopener noreferrer"> <FacebookIcon /></a>
                     </div>
                 </div>
             </div>

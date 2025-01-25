@@ -1,29 +1,50 @@
 .key-section {
-    padding: 100px 0;
+    padding: 32px 0;
     background-position: center;
     background: linear-gradient(0deg, rgba(12, 17, 41, 0.60) 0%, rgba(12, 17, 41, 0.60) 100%), 
                 url('/src/assets/key-bg.jpg') lightgray 50% / cover no-repeat;
 
+    @media screen and (min-width:$bp-tablet) {
+        padding: 100px 0;
+    }
+
     &__container {
         display: flex;
+        flex-direction: column;
         width: 100%;
         justify-content: space-between;
+
+        @media screen and (min-width: $bp-mobile) {
+            flex-direction: row;
+        }
     }
 
     &__text-block {
         justify-content: space-between;
         color: white;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 400;
         max-width: 496px;
 
+        @media screen and (min-width:$bp-mobile) {
+            font-size: 16px;
+        }
+
+        @media screen and (min-width:$bp-desktop) {
+            font-size: 20px;
+        }
+
         h2 {
             text-transform: uppercase;
-            font-size: 36px;
+            font-size: 20px;
             font-weight: 900;
             font-style: italic;
             color: #fff;
-            line-height: 50px;
+
+            @media screen and (min-width:$bp-desktop) {
+                font-size: 36px;
+                line-height: 50px;
+            }
         }
     }
 
@@ -31,7 +52,7 @@
         display: flex;
         flex-direction: column;
         background: white;
-        width: 50%;
+        width: 100%;
         background-color: transparent;
     }
 
@@ -40,18 +61,31 @@
         align-items: center;
         border: none;
         cursor: pointer;
-        padding: 20px 30px;
-        width: 100%;
+        padding: 16px 20px;
         justify-content: space-between;
         color: var(--primary-color);
         text-decoration: none;
         text-transform: uppercase;
         background-color: #fff;
-        font-size: 22px;
+        font-size: 16px;
         font-weight: 500;
         font-style: italic;
         text-align: start;
         gap: 10px;
+
+        @media screen and (min-width:$bp-mobile) {
+            width: 250px;
+        }
+
+        @media screen and (min-width:$bp-tablet) {
+            width: 312px;
+        }
+
+        @media screen and (min-width:$bp-desktop) {
+            font-size: 22px;
+            padding: 20px 30px;
+            width: 100%;
+        }
 
         &:nth-child(1) {
             border-top: 1px solid #B6B6B6;
@@ -73,13 +107,18 @@
     // Стили для выпадающего блока (контента аккордеона)
     &__dropdown {
         background: #fff;
-        padding: 0 30px;
-        font-size: 18px;
+        padding: 0 5px;
+        font-size: 16px;
         font-weight: 400;
         font-style: italic;
         color: var(--color-button);
         line-height: 1.5;
         overflow: hidden;
+
+        @media screen and (min-width:$bp-tablet) {
+            font-size: 18px;
+            padding: 0 30px;
+        }
 
         p {
             margin: 15px 0;
