@@ -16,8 +16,8 @@ function App() {
        <HeroSection />
       <AboutUs />
       <KeyAreas />
-      {/*<Initiators />
-      <Communication />
+      <Initiators />
+      {/*<Communication />
       <Partners />
       <Contact />
       <Footer /> */}
