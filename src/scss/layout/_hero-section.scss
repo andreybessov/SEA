@@ -7,48 +7,52 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
 
-  @media screen and (min-width:$bp-desktop) {
-    height: 100vh;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-section.fade-in {
+  opacity: 1;
+}
+
+.hero-section.fade-out {
+  opacity: 0.2;
+}
+
+.hero-section__title {
+  font-style: italic;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  margin-top: 320px;
+
+  @media screen and (min-width: $bp-mobile) {
+    font-size: 30px;
+    margin-top: 400px;
   }
 
-  /* Фон секції */
-  background-size: cover; /* Займає всю секцію, обрізуючи зайве */
-  background-position: top; /* Центрує зображення */
-  background-repeat: no-repeat; /* Запобігає повторенню */
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 50px;
+    margin: 370px 0 0;
+  }
+}
 
-  &__title {
-    font-style: italic;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 900;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    text-transform: uppercase;
-    margin-top: 320px;
+.hero-section__text {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 600;
 
-    @media screen and (min-width: $bp-mobile) {
-      font-size: 30px;
-      margin-top: 400px;
-    }
-
-    @media screen and (min-width: $bp-desktop) {
-      font-size: 50px;
-      margin: 370px 0 0;
-    }
+  @media screen and (min-width: $bp-mobile) {
+    font-size: 24px;
   }
 
-  &__text {
-    font-style: italic;
-    font-size: 14px;
-    font-weight: 600;
-
-    @media screen and (min-width: $bp-mobile) {
-      font-size: 24px;
-    }
-
-    @media screen and (min-width: $bp-desktop) {
-      font-size: 30px;
-    }
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 30px;
   }
 }
