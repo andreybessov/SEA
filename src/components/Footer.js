@@ -28,6 +28,28 @@ function Footer () {
                     <a href='https://www.facebook.com/' target='_blank' rel="noopener noreferrer"> <FacebookIcon /></a>
                     </div>
                 </div>
+                <div className='footer__mobile'>
+                <div className='footer__social-mobile'>
+                <img className='footer__logo' src={Logo} alt='logo'></img>
+                <div className='footer__social-link'>
+                    <a href='https://www.linkedin.com/in/oleksii-chuiev-ua' target='_blank' rel="noopener noreferrer"><Linkedin /></a>
+                    <a href='https://www.facebook.com/' target='_blank' rel="noopener noreferrer"> <FacebookIcon /></a>
+                    </div>
+                    </div>
+                    <div className="footer__mobile-link">
+                        <div className="footer__about-block">
+                            <h3><a href="#about-section">About Us</a></h3>
+                            <a href="#initiators-section">Who we are</a>
+                            <a href="#">Our Focus Areas</a>
+                        </div>
+                        <div className="footer__quick-block">
+                            <h3>Quick Links</h3>
+                            <a href="#partners-section">Inspired by</a>
+                            <a href="#contact-form">Contact Us</a>
+                        </div>
+                        <p>© 2025 Strategic Engineering Alliance. All Rights Reserved</p>
+                    </div>
+                </div>
             </div>
         </section>
     )

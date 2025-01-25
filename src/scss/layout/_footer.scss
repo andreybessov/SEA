@@ -1,11 +1,23 @@
 .footer {
-    padding: 60px 0;
+    padding: 24px 0;
     background-color: var(--primary-color);
 
+    @media screen and (min-width:$bp-mobile) {
+        padding: 40px 0;
+    }
+
+    @media screen and (min-width:$bp-desktop) {
+        padding: 60px 0;
+    }
+
     &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: none;
+
+        @media screen and (min-width:$bp-mobile) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__link-container {
@@ -16,16 +28,25 @@
     &__about-block {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 16px;
+
+        @media screen and (min-width:$bp-mobile) {
+            gap: 12px;
+        }
 
         h3 {
             text-decoration: none;
             color: #fff;
             cursor: pointer;
+            margin-top: 0;
 
             a {
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: 700;
+
+                @media screen and (min-width:$bp-tablet) {
+                    font-size: 20px;
+                }
             }
         }
 
@@ -46,10 +67,16 @@
         h3 {
             text-decoration: none;
             color: #fff;
+            margin-top: 0;
 
             a {
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: 700;
+                margin-bottom: 16px;
+
+                @media screen and (min-width:$bp-tablet) {
+                    font-size: 20px;
+                }
             }
         }
 
@@ -68,9 +95,18 @@
     }
 
     &__social-block {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 40px;
+        display: none;
+        
+        @media screen and (min-width:$bp-mobile) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        @media screen and (min-width:$bp-desktop) {  
+            align-items: start; 
+        }
 
         p {
             font-size: 16px;
@@ -82,5 +118,39 @@
     &__social-link {
         display: flex;
         gap: 30px;
+    }
+
+    &__mobile {
+        display: block;
+
+        @media screen and (min-width:$bp-mobile) {
+            display: none;
+        }
+    }
+
+    &__social-mobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__mobile-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: start;
+        }
     }
 }
