@@ -57,6 +57,7 @@
             cursor: pointer;
             font-size: 16px;
             color: white;
+            text-wrap: nowrap;
 
             @media screen and (min-width:$bp-tablet) {
                 font-size: 24px;
@@ -117,11 +118,15 @@
             background-color: #dcdcdc5c;
             padding: 24px 16px;
             margin-bottom: 18px;
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 400;
             color: #333;
             cursor: pointer;
             appearance: none;  // Убирает стрелку браузера
+
+            @media screen and (min-width:$bp-desktop) {
+                font-size: 18px;
+            }
         }
 
         .contact-section__arrow {
