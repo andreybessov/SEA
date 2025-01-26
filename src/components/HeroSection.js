@@ -4,27 +4,32 @@ import slide2 from '../assets/hero-bg-slide2.jpg';
 import slide3 from '../assets/hero-bg-slide3.jpg';
 
 function HeroSection() {
-  const slides = [
-    slide1,
-    slide2,
-    slide3,
-  ];
-
+  const slides = [slide1, slide2, slide3];
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [transitionClass, setTransitionClass] = useState('slide-active');
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000); // Змінює слайд кожні 5 секунд
-    return () => clearInterval(interval); // Чистка таймера при розмонтажі
+      setTransitionClass('slide-exit');
+
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+        setTransitionClass('slide-enter');
+
+        setTimeout(() => {
+          setTransitionClass('slide-active');
+        }, 50); // коротка пауза для активації входу
+      }, 1000); // тривалість анімації повинна збігатися з CSS
+    }, 6000);
+
+    return () => clearInterval(interval);
   }, [slides.length]);
 
   return (
     <section
-      className="hero-section"
+      className={`hero-section ${transitionClass}`}
       style={{
         backgroundImage: `linear-gradient(0deg, rgba(12, 17, 41, 0.60), rgba(12, 17, 41, 0.60)), url(${slides[currentSlide]})`,
-        backgroundSize: 'cover',
       }}
     >
       <div className="container">

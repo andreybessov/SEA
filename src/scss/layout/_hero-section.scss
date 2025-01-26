@@ -14,51 +14,22 @@
   }
 
   /* Фон секции */
-  background-size: cover; /* Занимает всю секцию, обрезая лишнее */
-  background-position: top center; /* Центрирует изображение */
-  background-repeat: no-repeat; /* Запрещает повторение */
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 
-  transition: opacity 1s ease-in-out; /* Плавный переход при смене фона */
+  /* Плавний перехід між слайдами */
+  transition: transform 1s ease-in-out;
 }
 
-.hero-section.fade-in {
-  opacity: 1;
+.hero-section.slide-enter {
+  transform: translateX(100%);
 }
 
-.hero-section.fade-out {
-  opacity: 0.8;
+.hero-section.slide-active {
+  transform: translateX(0%);
 }
 
-.hero-section__title {
-  font-style: italic;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  text-transform: uppercase;
-  margin-top: 320px;
-
-  @media screen and (min-width: $bp-mobile) {
-    font-size: 30px;
-    margin-top: 400px;
-  }
-
-  @media screen and (min-width: $bp-desktop) {
-    font-size: 50px;
-    margin: 370px 0 0;
-  }
-}
-
-.hero-section__text {
-  font-style: italic;
-  font-size: 14px;
-  font-weight: 600;
-
-  @media screen and (min-width: $bp-mobile) {
-    font-size: 24px;
-  }
-
-  @media screen and (min-width: $bp-desktop) {
-    font-size: 30px;
-  }
+.hero-section.slide-exit {
+  transform: translateX(-100%);
 }
