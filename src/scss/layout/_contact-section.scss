@@ -79,7 +79,9 @@
         margin-bottom: 18px;
         appearance: none;  // Убирает стандартное оформление браузера
         font-size: 18px;
-        border-radius: none !important;
+        border-radius: 0; /* Убирает закругленные углы */
+        -webkit-appearance: none; /* Убирает встроенные стили Safari */
+        appearance: none;
 
         &:focus {
             outline: none;
