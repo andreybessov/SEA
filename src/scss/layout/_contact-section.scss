@@ -62,6 +62,13 @@
             @media screen and (min-width:$bp-tablet) {
                 font-size: 24px;
             }
+
+            @media screen and (min-width:$bp-desktop) {
+                &:hover {
+                    background: var(--Blue-dark, #030E43);
+                    box-shadow: 0px 4px 10px 0px rgba(3, 14, 67, 0.60);
+                }
+            }
         }
     }
 
@@ -72,6 +79,7 @@
         margin-bottom: 18px;
         appearance: none;  // Убирает стандартное оформление браузера
         font-size: 18px;
+        border-radius: none !important;
 
         &:focus {
             outline: none;

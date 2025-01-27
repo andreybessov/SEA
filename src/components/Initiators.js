@@ -20,8 +20,8 @@ function Initiators () {
                 </p>
                 <img className='initiators-section__img-mobile' src={heroImgMobile} alt='initiators-img-mobile'></img>
                 <button className='initiators-section__button' type='button'>
-                    <a className='initiators-section__link' href='#'>Schedule a personal or online meeting<Arrow /></a>
-                    <a className='initiators-section__link-mobile' href='#'>Learn more about us<Arrow /></a>
+                    <a className='initiators-section__link' href='#contact-form'>Schedule a personal or online meeting<Arrow /></a>
+                    <a className='initiators-section__link-mobile' href='#contact-form'>Learn more about us<Arrow /></a>
                 </button>
             </div>
         </div>
