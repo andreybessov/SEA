@@ -58,6 +58,8 @@
             font-size: 16px;
             color: white;
             text-wrap: nowrap;
+            width: 100%;
+            max-width: 574px;
 
             @media screen and (min-width:$bp-tablet) {
                 font-size: 24px;
@@ -81,7 +83,6 @@
         font-size: 18px;
         border-radius: 0; /* Убирает закругленные углы */
         -webkit-appearance: none; /* Убирает встроенные стили Safari */
-        appearance: none;
 
         &:focus {
             outline: none;
