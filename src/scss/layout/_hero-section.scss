@@ -1,30 +1,25 @@
 .hero-section {
   position: relative;
   width: 100%;
-  height: 34.8vh;
+  height: 50vh;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat;
-
-  transition: opacity 0.5s ease-in-out; /* Плавный переход */
-  opacity: 0.2; 
-
-  @media screen and (min-width:$bp-mobile) {
-    height:80vh;
-    background-size: cover;
-  }
-
   @media screen and (min-width:$bp-desktop) {
     height: 100vh;
   }
 
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  transition: opacity 0.5s ease-in-out; /* Плавный переход */
+  opacity: 0.2; /* Исходное состояние (невидимо) */
+
   &.visible {
-    opacity: 1; 
+    opacity: 1; /* Видимо */
   }
 }
 
@@ -34,7 +29,7 @@
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
-  margin-top: 200px;
+  margin-top: 320px;
 
   @media screen and (min-width: 768px) {
     font-size: 30px;

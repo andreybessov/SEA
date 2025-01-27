@@ -120,6 +120,7 @@
         color: var(--color-button);
         line-height: 1.5;
         overflow: hidden;
+        text-align: justify;
 
         @media screen and (min-width:$bp-tablet) {
             font-size: 18px;
