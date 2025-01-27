@@ -1,32 +1,31 @@
 .hero-section {
   position: relative;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  height: 34.8vh;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
 
-  @media screen and (min-width: $bp-desktop) {
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  transition: opacity 0.5s ease-in-out; /* Плавный переход */
+  opacity: 0.2; 
+
+  @media screen and (min-width:$bp-mobile) {
+    height:80vh;
+    background-size: cover;
+  }
+
+  @media screen and (min-width:$bp-desktop) {
     height: 100vh;
   }
 
-  /* Фон секции */
-  background-size: cover; /* Занимает всю секцию, обрезая лишнее */
-  background-position: top center; /* Центрирует изображение */
-  background-repeat: no-repeat; /* Запрещает повторение */
-
-  transition: opacity 1s ease-in-out; /* Плавный переход при смене фона */
-}
-
-.hero-section.fade-in {
-  opacity: 1;
-}
-
-.hero-section.fade-out {
-  opacity: 0.8;
+  &.visible {
+    opacity: 1; 
+  }
 }
 
 .hero-section__title {
@@ -35,14 +34,14 @@
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
-  margin-top: 320px;
+  margin-top: 200px;
 
-  @media screen and (min-width: $bp-mobile) {
+  @media screen and (min-width: 768px) {
     font-size: 30px;
     margin-top: 400px;
   }
 
-  @media screen and (min-width: $bp-desktop) {
+  @media screen and (min-width: 1200px) {
     font-size: 50px;
     margin: 370px 0 0;
   }
@@ -57,11 +56,11 @@
   font-size: 14px;
   font-weight: 600;
 
-  @media screen and (min-width: $bp-mobile) {
+  @media screen and (min-width: 768px) {
     font-size: 24px;
   }
 
-  @media screen and (min-width: $bp-desktop) {
+  @media screen and (min-width: 1200px) {
     font-size: 30px;
   }
 
