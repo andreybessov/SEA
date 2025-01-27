@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SEA/static/css/main.a51f2312.css",
-    "main.js": "/SEA/static/js/main.7054caf1.js",
+    "main.css": "/SEA/static/css/main.321e6f02.css",
+    "main.js": "/SEA/static/js/main.c9f71935.js",
     "static/media/initiators-img-tablet.jpg": "/SEA/static/media/initiators-img-tablet.c9093449628e3893d0a8.jpg",
     "static/media/hero-bg-slide1.jpg": "/SEA/static/media/hero-bg-slide1.fc2575dc20d9792d4106.jpg",
     "static/media/key-bg.jpg": "/SEA/static/media/key-bg.ce00f9c9d29da25fefac.jpg",
@@ -23,11 +23,11 @@
     "static/media/burger-btn-close.svg": "/SEA/static/media/burger-btn-close.906bc82a511001a9911d3ae1934de42b.svg",
     "static/media/facebook-icon.svg": "/SEA/static/media/facebook-icon.837c80cb4169cc91e08e1bc669914ce0.svg",
     "static/media/chevron-right.svg": "/SEA/static/media/chevron-right.7beb9788671f5ea22797846499843eef.svg",
-    "main.a51f2312.css.map": "/SEA/static/css/main.a51f2312.css.map",
-    "main.7054caf1.js.map": "/SEA/static/js/main.7054caf1.js.map"
+    "main.321e6f02.css.map": "/SEA/static/css/main.321e6f02.css.map",
+    "main.c9f71935.js.map": "/SEA/static/js/main.c9f71935.js.map"
   },
   "entrypoints": [
-    "static/css/main.a51f2312.css",
-    "static/js/main.7054caf1.js"
+    "static/css/main.321e6f02.css",
+    "static/js/main.c9f71935.js"
   ]
 }
