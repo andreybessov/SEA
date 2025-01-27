@@ -10,20 +10,21 @@ function HeroSection() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsTransitioning(true);
+      setIsTransitioning(true); // Включаем класс для плавного перехода
       setTimeout(() => {
-        setCurrentSlide((prev) => (prev + 1) % slides.length);
-        setIsTransitioning(false);
-      }, 1000); // Длительность совпадает с CSS `transition`
+        setCurrentSlide((prev) => (prev + 1) % slides.length); // Меняем слайд
+        setIsTransitioning(false); // Убираем класс после перехода
+      }, 500); // Длительность совпадает с CSS transition
     }, 6000); // Интервал смены слайда
-    return () => clearInterval(interval);
+
+    return () => clearInterval(interval); // Чистим таймер
   }, [slides.length]);
 
   return (
     <section
-      className={`hero-section ${!isTransitioning ? 'visible' : ''}`}
+      className={`hero-section ${isTransitioning ? 'transitioning' : ''}`}
       style={{
-        backgroundImage: `linear-gradient(0deg, rgba(12, 17, 41, 0.60), rgba(12, 17, 41, 0.60)), url(${slides[currentSlide]})`,
+        backgroundImage: `url(${slides[currentSlide]})`,
       }}
     >
       <div className="container">
